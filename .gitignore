@@ -1,0 +1,10 @@
+.vs/
+.vscode/
+Randomizer.ConsoleUI/bin
+Randomizer.ConsoleUI/obj
+Randomizer.Infrastructure/bin
+Randomizer.Infrastructure/obj
+Randomizer.Logic/bin
+Randomizer.Logic/obj
+Randomizer.UnitTests/bin
+Randomizer.UnitTests/obj
