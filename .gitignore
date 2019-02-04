@@ -8,3 +8,6 @@ Randomizer.Logic/bin
 Randomizer.Logic/obj
 Randomizer.UnitTests/bin
 Randomizer.UnitTests/obj
+Randomizer.Proof_Of_Concept/bin
+Randomizer.Proof_Of_Concept/obj
+*.txt
