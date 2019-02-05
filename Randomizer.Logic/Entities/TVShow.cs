@@ -25,7 +25,11 @@ namespace Randomizer.Logic
             set
             {
                 episodes = new EpisodeManager();
-                queryableTitle = ConvertToQueryTitle(value);
+                try
+                {
+                    queryableTitle = ConvertToQueryTitle(value);
+                }
+                catch (ArgumentNullException ex) { throw ex; }
             }
         }
 
@@ -39,18 +43,23 @@ namespace Randomizer.Logic
             Title = title;
         }
 
+        public Tuple<int, int> GetRandomPair() => episodes.GetRandomPair();
+        public void SetEpiodes(embedded ep) => episodes.SetSeEpisodes(ep);
+
         private string ConvertToQueryTitle(string title)
         {
+            if (string.IsNullOrEmpty(title))
+            {
+                queryableTitle = string.Empty;
+                throw new ArgumentNullException("The Title you entered is either null or empty");
+            }
+
             // need to remove any special characters from the title
             var charArray = title.ToLower().Where(c => char.IsLetterOrDigit(c) || char.IsWhiteSpace(c)).ToArray();
 
             //replace the whitespace with plus sign for api query
             return new string(charArray).Replace(' ', '+');
         }
-        public Tuple<int, int> GetRandomPair() => episodes.GetRandomPair();
-        public void SetEpiodes(embedded ep)
-        {
-            episodes.SetSeEpisodes(ep);
-        }
+
     }
 }

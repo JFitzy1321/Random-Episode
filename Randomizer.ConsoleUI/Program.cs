@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Http;
 using Randomizer.Logic;
 
 namespace Randomizer.ConsoleUI
@@ -32,24 +33,72 @@ namespace Randomizer.ConsoleUI
         }
         private static void FirstLoop()
         {
-            myConsole.WriteMessage(StandardMessages.AskForTitle, NewLineCharacter.No);
-            var title = myConsole.ReadLine();
-
-            commObj.SetTvTitle(title);
-            if (commObj.CallApi())
+            while (true)
             {
-                GetRandomPair();
+                try
+                {
+                    myConsole.WriteMessage(StandardMessages.AskForTitle, NewLineCharacter.No);
+                    var title = myConsole.ReadLine();
+                    commObj.SetTvTitle(title);
+                    if (commObj.CallApi())
+                    {
+                        GetRandomPair();
+                    }
+                    else
+                    {
+                        myConsole.WriteMessage("Something Went Wrong calling the api. closing app");
+                        Environment.Exit(-1);
+                    }
+                    return;
+                }
+                catch (Exception ex)
+                {
+                    if (ex is HttpRequestException)
+                    {
+                        myConsole.WriteMessage($"Bad api request. closing program:\n {ex.InnerException.Message}");
+                        Environment.Exit(-1);
+                    }
+                    else if (ex is ArgumentException)
+                    {
+                        myConsole.WriteMessage("Please enter a valid tv show title!");
+                        continue;
+                    }
+                }
             }
-            else
-            {
-                myConsole.WriteMessage("Something Went Wrong calling the api. closing app");
-                Environment.Exit(-1);
-            }
-
         }
-        private static void PostcedingLoops()
+        private static void PostcedingLoops() //opposite of preceding
         {
+            while (true)
+            {
+                myConsole.WriteMessage(StandardMessages.MenuOptionsMessages, NewLineCharacter.No);
 
+                try
+                {
+                    var userMenuChoice = int.Parse(myConsole.ReadLine());
+
+                    switch (userMenuChoice)
+                    {
+                        case 1: // get another random ep pair
+                            GetRandomPair();
+                            return;
+                        case 2: // set another tv show name
+                            FirstLoop();
+                            return;
+                        case 3: // exit
+                            Environment.Exit(0);
+                            break;
+                        default: // invalid input
+                            myConsole.WriteMessage("Invalid menu option! Try again");
+                            continue;
+                    }
+
+                }
+                catch (FormatException)
+                {
+                    myConsole.WriteMessage("Invalid input! Try again");
+                    continue;
+                }
+            }
         }
     }
 }

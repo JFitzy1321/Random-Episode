@@ -9,6 +9,8 @@ namespace Randomizer.Infrastructure
         private static readonly string baseURL= @"https://api.tvmaze.com/singlesearch/shows?q=";
         private static readonly string embed = @"&embed=episodes";
 
+        //example: https://api.tvmaze.com/singlesearch/shows?q=bobs+burgers&embed=episodes
+
         private static Uri CreateUrl(string title) => new Uri(baseURL + title + embed);
 
         public static string CallApi_Sync(string title)
