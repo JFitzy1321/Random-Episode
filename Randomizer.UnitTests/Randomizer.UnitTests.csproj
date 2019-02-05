@@ -12,4 +12,9 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Randomizer.Infrastructure\Randomizer.Infrastructure.csproj" />
+    <ProjectReference Include="..\Randomizer.ConsoleUI\Randomizer.ConsoleUI.csproj" />
+  </ItemGroup>
+
 </Project>

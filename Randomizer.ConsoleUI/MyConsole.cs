@@ -2,7 +2,7 @@
 
 namespace Randomizer.ConsoleUI
 {
-    class MyConsole : IConsoleComm
+    public class MyConsole : IConsoleComm
     {
         public bool AskToLoopAgain()
         {
