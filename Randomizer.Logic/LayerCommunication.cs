@@ -6,7 +6,7 @@ namespace Randomizer.Logic
 {
     public class LayerCommunication : ILayerCommunication
     {
-        private TVShow show;
+        private TVShow show = new TVShow();
 
         public bool CallApi()
         {

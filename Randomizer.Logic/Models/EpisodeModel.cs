@@ -22,23 +22,24 @@ namespace Randomizer.Logic
             // it makes the compiler shut the hell up and stop showing warnings
             unchecked
             {
-                var hash = (int)Math.Pow(Math.PI, 2);
-                hash = (hash * 1321) * Id;
-                hash = (hash * 1321) * Season;
-                hash = (hash * 1321) * Number;
+                var hash = 0x000123;
+                hash *= Id;
 
                 return hash;
             }
         }
         private bool Equals(EpisodeModel other)
         {
-            if (other == null)
+            if (this.GetType() != other.GetType())
                 return false;
 
-            if (ReferenceEquals(this, other))
+            if (Object.ReferenceEquals(other, null))
+                return false;
+
+            if (Object.ReferenceEquals(this, other))
                 return true;
 
-            return this == other;
+            return (this.Season == other.Season) && (this.Number == other.Number);
         }
 
         public static bool operator ==(EpisodeModel one, EpisodeModel two)

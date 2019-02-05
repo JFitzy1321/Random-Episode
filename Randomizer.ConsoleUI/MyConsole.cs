@@ -6,17 +6,26 @@ namespace Randomizer.ConsoleUI
     {
         public bool AskToLoopAgain()
         {
-            try
+            while (true)
             {
-                WriteMessage(StandardMessages.LoopAgain, NewLineCharacter.No);
+                try
+                {
+                    WriteMessage("\nWant to find another random episode or find another show? y / n : ", NewLineCharacter.No);
+                    string input = ReadLine();
 
-                var answer = ReadLine();
-
-                return EvaluateResponse(answer);
-            }
-            catch
-            {
-                throw;
+                    return EvaluateResponse(input);
+                }
+                catch (ArgumentException)
+                {
+                    WriteMessage(@"Invalid Entry. Please enter 'y' or 'n'");
+                    continue;
+                }
+                catch (Exception ex)
+                {
+                    WriteMessage($"An exception was catch: {ex.Message}");
+                    WriteMessage("Closing app. Goodbye!");
+                    return false;
+                }
             }
         }
 
@@ -26,9 +35,9 @@ namespace Randomizer.ConsoleUI
             {
                 return Console.ReadLine();
             }
-            catch
+            catch (ArgumentException ex)
             {
-                throw;
+                throw ex;
             }
         }
 
