@@ -17,7 +17,7 @@ namespace Randomizer.Proof_Of_Concept
             var results = TVMazeCaller.CallApi_Sync(apiTitle);
 
             Console.WriteLine("Writing JSON from api to file");
-            using (StreamWriter output = new StreamWriter(File.Create(System.AppDomain.CurrentDomain.BaseDirectory + @"\..\..\..\" + name+"_reults.json")))
+            using (StreamWriter output = new StreamWriter(File.Create($"{ System.AppDomain.CurrentDomain.BaseDirectory }\\..\\..\\..\\{ name }_results.json")))
             {
                 output.Write(results);
             }
