@@ -1,6 +1,8 @@
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Randomizer.Common.Exceptions;
+
 
 namespace Randomizer.Infrastructure
 {

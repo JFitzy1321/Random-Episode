@@ -6,5 +6,6 @@
     {
         void WriteMessage(string message, NewLineCharacter charReturn = NewLineCharacter.Yes);
         string ReadLine();
+        bool AskToLoopAgain();
     }
 }

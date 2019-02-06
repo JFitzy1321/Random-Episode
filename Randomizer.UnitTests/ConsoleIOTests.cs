@@ -13,7 +13,7 @@ namespace Randomizer.UnitTests
             var type = typeof(MyConsole);
             var consolePrivate = Activator.CreateInstance(type);
             MethodInfo method = type.GetMethods(BindingFlags.NonPublic | BindingFlags.Instance)
-                .Where(x => x.Name == "YesOrNoEvaluation" && x.IsPrivate)
+                .Where(x => x.Name == "EvaluateResponse" && x.IsPrivate)
                 .First();
 
             return (bool)method.Invoke(consolePrivate, new object[] { input });

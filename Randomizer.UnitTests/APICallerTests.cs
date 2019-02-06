@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Randomizer.Infrastructure;
+﻿using Randomizer.Infrastructure;
+using Randomizer.Common.Exceptions;
 using Xunit;
 
 namespace Randomizer.UnitTests

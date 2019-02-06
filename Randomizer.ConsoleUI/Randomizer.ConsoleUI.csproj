@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <ProjectReference Include="..\Randomizer.Common\Randomizer.Common.csproj" />
     <ProjectReference Include="..\Randomizer.Logic\Randomizer.Logic.csproj" />
   </ItemGroup>
 

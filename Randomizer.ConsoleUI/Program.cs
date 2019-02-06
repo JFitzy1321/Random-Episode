@@ -7,7 +7,7 @@ namespace Randomizer.ConsoleUI
     class Program
     {
         private static ILayerCommunication commObj = new LayerCommunication();
-        private static IConsoleComm myConsole = new MyConsole();
+        private static IConsole myConsole = new MyConsole();
 
         static void Main(string[] args)
         {

@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Randomizer.Common\Randomizer.Common.csproj" />
     <ProjectReference Include="..\Randomizer.Infrastructure\Randomizer.Infrastructure.csproj" />
   </ItemGroup>
 
