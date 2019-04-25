@@ -10,4 +10,6 @@ Randomizer.UnitTests/bin
 Randomizer.UnitTests/obj
 Randomizer.Proof_Of_Concept/bin
 Randomizer.Proof_Of_Concept/obj
+Randomizer.Web_MVC/bin
+Randomizer.Web_MVC/obj
 *.txt
