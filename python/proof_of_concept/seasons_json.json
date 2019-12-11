@@ -1,0 +1,278 @@
+[{
+    "id": 1272,
+    "url": "http://www.tvmaze.com/seasons/1272/archer-season-1",
+    "number": 1,
+    "name": "",
+    "episodeOrder": null,
+    "premiereDate": "2009-09-17",
+    "endDate": "2010-03-18",
+    "network": {
+        "id": 13,
+        "name": "FX",
+        "country": {
+            "name": "United States",
+            "code": "US",
+            "timezone": "America/New_York"
+        }
+    },
+    "webChannel": null,
+    "image": {
+        "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/24/60553.jpg",
+        "original": "http://static.tvmaze.com/uploads/images/original_untouched/24/60553.jpg"
+    },
+    "summary": "",
+    "_links": {
+        "self": {
+            "href": "http://api.tvmaze.com/seasons/1272"
+        }
+    }
+}, {
+    "id": 1273,
+    "url": "http://www.tvmaze.com/seasons/1273/archer-season-2",
+    "number": 2,
+    "name": "",
+    "episodeOrder": null,
+    "premiereDate": "2011-01-27",
+    "endDate": "2011-04-21",
+    "network": {
+        "id": 13,
+        "name": "FX",
+        "country": {
+            "name": "United States",
+            "code": "US",
+            "timezone": "America/New_York"
+        }
+    },
+    "webChannel": null,
+    "image": {
+        "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/24/60554.jpg",
+        "original": "http://static.tvmaze.com/uploads/images/original_untouched/24/60554.jpg"
+    },
+    "summary": "",
+    "_links": {
+        "self": {
+            "href": "http://api.tvmaze.com/seasons/1273"
+        }
+    }
+}, {
+    "id": 1274,
+    "url": "http://www.tvmaze.com/seasons/1274/archer-season-3",
+    "number": 3,
+    "name": "",
+    "episodeOrder": null,
+    "premiereDate": "2011-09-15",
+    "endDate": "2012-03-22",
+    "network": {
+        "id": 13,
+        "name": "FX",
+        "country": {
+            "name": "United States",
+            "code": "US",
+            "timezone": "America/New_York"
+        }
+    },
+    "webChannel": null,
+    "image": {
+        "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/24/60555.jpg",
+        "original": "http://static.tvmaze.com/uploads/images/original_untouched/24/60555.jpg"
+    },
+    "summary": "",
+    "_links": {
+        "self": {
+            "href": "http://api.tvmaze.com/seasons/1274"
+        }
+    }
+}, {
+    "id": 1275,
+    "url": "http://www.tvmaze.com/seasons/1275/archer-season-4",
+    "number": 4,
+    "name": "",
+    "episodeOrder": null,
+    "premiereDate": "2013-01-17",
+    "endDate": "2013-04-11",
+    "network": {
+        "id": 13,
+        "name": "FX",
+        "country": {
+            "name": "United States",
+            "code": "US",
+            "timezone": "America/New_York"
+        }
+    },
+    "webChannel": null,
+    "image": {
+        "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/24/60556.jpg",
+        "original": "http://static.tvmaze.com/uploads/images/original_untouched/24/60556.jpg"
+    },
+    "summary": "",
+    "_links": {
+        "self": {
+            "href": "http://api.tvmaze.com/seasons/1275"
+        }
+    }
+}, {
+    "id": 1276,
+    "url": "http://www.tvmaze.com/seasons/1276/archer-season-5",
+    "number": 5,
+    "name": "Archer: Vice",
+    "episodeOrder": null,
+    "premiereDate": "2014-01-13",
+    "endDate": "2014-04-21",
+    "network": {
+        "id": 13,
+        "name": "FX",
+        "country": {
+            "name": "United States",
+            "code": "US",
+            "timezone": "America/New_York"
+        }
+    },
+    "webChannel": null,
+    "image": {
+        "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/24/60557.jpg",
+        "original": "http://static.tvmaze.com/uploads/images/original_untouched/24/60557.jpg"
+    },
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "http://api.tvmaze.com/seasons/1276"
+        }
+    }
+}, {
+    "id": 1608,
+    "url": "http://www.tvmaze.com/seasons/1608/archer-season-6",
+    "number": 6,
+    "name": "",
+    "episodeOrder": null,
+    "premiereDate": "2015-01-08",
+    "endDate": "2015-04-02",
+    "network": {
+        "id": 13,
+        "name": "FX",
+        "country": {
+            "name": "United States",
+            "code": "US",
+            "timezone": "America/New_York"
+        }
+    },
+    "webChannel": null,
+    "image": {
+        "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/63/158474.jpg",
+        "original": "http://static.tvmaze.com/uploads/images/original_untouched/63/158474.jpg"
+    },
+    "summary": "",
+    "_links": {
+        "self": {
+            "href": "http://api.tvmaze.com/seasons/1608"
+        }
+    }
+}, {
+    "id": 33224,
+    "url": "http://www.tvmaze.com/seasons/33224/archer-season-7",
+    "number": 7,
+    "name": "",
+    "episodeOrder": 10,
+    "premiereDate": "2016-03-31",
+    "endDate": "2016-06-02",
+    "network": {
+        "id": 13,
+        "name": "FX",
+        "country": {
+            "name": "United States",
+            "code": "US",
+            "timezone": "America/New_York"
+        }
+    },
+    "webChannel": null,
+    "image": {
+        "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/63/158479.jpg",
+        "original": "http://static.tvmaze.com/uploads/images/original_untouched/63/158479.jpg"
+    },
+    "summary": "",
+    "_links": {
+        "self": {
+            "href": "http://api.tvmaze.com/seasons/33224"
+        }
+    }
+}, {
+    "id": 48378,
+    "url": "http://www.tvmaze.com/seasons/48378/archer-season-8",
+    "number": 8,
+    "name": "Archer: Dreamland",
+    "episodeOrder": 8,
+    "premiereDate": "2017-04-05",
+    "endDate": "2017-05-24",
+    "network": {
+        "id": 47,
+        "name": "FXX",
+        "country": {
+            "name": "United States",
+            "code": "US",
+            "timezone": "America/New_York"
+        }
+    },
+    "webChannel": null,
+    "image": {
+        "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/155/387859.jpg",
+        "original": "http://static.tvmaze.com/uploads/images/original_untouched/155/387859.jpg"
+    },
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "http://api.tvmaze.com/seasons/48378"
+        }
+    }
+}, {
+    "id": 81895,
+    "url": "http://www.tvmaze.com/seasons/81895/archer-season-9",
+    "number": 9,
+    "name": "Archer: Danger Island",
+    "episodeOrder": 8,
+    "premiereDate": "2018-04-25",
+    "endDate": "2018-06-13",
+    "network": {
+        "id": 47,
+        "name": "FXX",
+        "country": {
+            "name": "United States",
+            "code": "US",
+            "timezone": "America/New_York"
+        }
+    },
+    "webChannel": null,
+    "image": {
+        "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/155/387858.jpg",
+        "original": "http://static.tvmaze.com/uploads/images/original_untouched/155/387858.jpg"
+    },
+    "summary": "<p>FXX text was here",
+    "_links": {
+        "self": {
+            "href": "http://api.tvmaze.com/seasons/81895"
+        }
+    }
+}, {
+    "id": 85957,
+    "url": "http://www.tvmaze.com/seasons/85957/archer-season-10",
+    "number": 10,
+    "name": "Archer: 1999",
+    "episodeOrder": 8,
+    "premiereDate": "2019-05-29",
+    "endDate": "2019-05-29",
+    "network": {
+        "id": 47,
+        "name": "FXX",
+        "country": {
+            "name": "United States",
+            "code": "US",
+            "timezone": "America/New_York"
+        }
+    },
+    "webChannel": null,
+    "image": null,
+    "summary": null,
+    "_links": {
+        "self": {
+            "href": "http://api.tvmaze.com/seasons/85957"
+        }
+    }
+}]
